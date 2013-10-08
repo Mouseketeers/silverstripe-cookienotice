@@ -15,15 +15,15 @@ class CookieNoticeSiteConfig extends DataObjectDecorator {
 		);
 	}
 	public function updateCMSFields(FieldSet &$fields) {
+		Requirements::javascript('cookienotice/javascript/cookie-notice.js');
 		$fields->addFieldsToTab(
 			'Root.CookieNotice',
 			array(
 				new CheckboxField('CookieNoticeEnable', 'Show cookie message'),				
 				new HTMLEditorField('CookieNoticeContent', 'Cookie message', 15),
 				new TextField('CookieNoticeCloseText', 'Text of Accept/Close button'),
-				new CheckboxField('CookieNoticeRequireAccept', 'Show notice until accepted')
-
-
+				new CheckboxField('CookieNoticeRequireAccept', 'Show cookie notice until user has hit accept/close button'),
+				new LiteralField('CookieNoticeDeleteCookie', '<button id="cookie-accept-delete" href="#">Delete the accept of cookies on this computer for the cookie notice to show again</button>')
 			)
 		);
    	}
