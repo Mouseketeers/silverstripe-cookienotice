@@ -17,8 +17,8 @@
 		});
 		deleteButton.click(function(e){
 			e.preventDefault();
-			document.cookie = 'cookiesAccepted=;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/';
-			alert('Your accept of cookies on this computer has been cancled. The cookie notice should now show when you visit the site.');
+			document.cookie = 'cookiesAccepted=deleted;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/';
+			alert('Your accept of cookies on this computer has been cancled.');
 		});
 	});
 })(jQuery);

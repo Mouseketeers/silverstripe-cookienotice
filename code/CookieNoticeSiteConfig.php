@@ -23,7 +23,7 @@ class CookieNoticeSiteConfig extends DataObjectDecorator {
 				new HTMLEditorField('CookieNoticeContent', 'Cookie message', 15),
 				new TextField('CookieNoticeCloseText', 'Text of Accept/Close button'),
 				new CheckboxField('CookieNoticeRequireAccept', 'Show cookie notice until user has hit accept/close button'),
-				new LiteralField('CookieNoticeDeleteCookie', '<button id="cookie-accept-delete" href="#">Delete the accept of cookies on this computer for the cookie notice to show again</button>')
+				new LiteralField('CookieNoticeDeleteCookie', '<p style="margin-top:3em;color:#666">If you accepted the cookie notice and want to cancel the accept for the cookie notice to show again press this button:</p><button id="cookie-accept-delete" href="#">Delete the accept of cookies on this computer</button>')
 			)
 		);
    	}
