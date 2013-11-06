@@ -9,6 +9,8 @@ class CookieNoticeSiteConfig extends DataObjectDecorator {
 				'CookieNoticeCloseText'  => 'Varchar(100)'
 			),
 			'defaults' => array(
+				'CookieNoticeEnable' => false,
+				'CookieNoticeContent' => '<p>We use cookies on this site.</p>',
 				'CookieCloseText' => 'Accept',
 				'CookieNoticeRequireAccept' => 'true'
 			)
