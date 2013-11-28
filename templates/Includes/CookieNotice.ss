@@ -8,7 +8,11 @@
 	<div id="cookie-notice-row" class="row">
 		<div id="cookie-notice-column" class="large-12 columns">
 			$CookieNoticeContent
-			<% if CookieNoticeCloseText %><a id="cookie-notice-accept" class="button radius small" href="/cookies/accept">$CookieNoticeCloseText</a><% end_if %>
+			<% if CookieNoticeCloseText %>
+				<form action="cookienotice/accept" method="get">
+					<p><input id="cookie-notice-accept" type="submit" id="cookie-notice-accept" class="button radius small" value="$CookieNoticeCloseText" /></p>
+				</form>
+			<% end_if %>
 		</div>
 	</div>
 </div>
