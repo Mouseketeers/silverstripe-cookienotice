@@ -5,7 +5,10 @@ Adds cookie notice configuration to the site config
  * SilverStripe 2.4.x
 
 ## Installation
-Install as normal and add <% include CookieNotice %> to your Page.ss template right after the body tag
+Install as normal and add <% include CookieNotice %> to your Page.ss template right after the body tag.
+
+If you don't want javascripts (such as Google Analytics) to save cookies before the users has accepted them, put the scripts inside <% if CookiesAccepted %>[ Your scripts ]<% end_if %>
+
 
 ## Maintainer Contact
 * Henrik Olsen
