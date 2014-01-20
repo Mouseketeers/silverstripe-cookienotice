@@ -3,7 +3,7 @@
 <% require javascript(cookienotice/javascript/cookie-notice.js) %>
 <% require css(cookienotice/css/cookie-notice.css) %>
 <% control SiteConfig %>
-<!--googleoff: index-->
+<!--googleoff: all-->
 <div id="cookie-notice">
 	<div id="cookie-notice-row" class="row">
 		<div id="cookie-notice-column" class="large-12 columns">
@@ -16,7 +16,7 @@
 		</div>
 	</div>
 </div>
-<!--googleon: index-->
+<!--googleon: all-->
 <% end_control %>
 <% end_if %>
 
