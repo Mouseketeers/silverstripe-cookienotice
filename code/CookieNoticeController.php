@@ -1,5 +1,5 @@
 <?php
-class CookieNoticeController extends Page_Controller {
+class CookieNoticeController extends Controller {
 	static $allowed_actions = array(
 		'accept'
 	);

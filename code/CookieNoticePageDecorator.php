@@ -1,5 +1,5 @@
 <?php
-class CookieNoticePageDecorator extends DataObjectDecorator {
+class CookieNoticePageDecorator extends Extension {
 	public static $CookieNoticeJavascriptEnabled = true;
 	public function ShowCookieNotice() {		
 		if(SiteConfig::current_site_config()->CookieNoticeEnable && !self::CookiesAccepted()) {

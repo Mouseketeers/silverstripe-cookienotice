@@ -1,0 +1,7 @@
+---
+Name: cookie-notice-routes
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    'cookienotice//$Action': 'CookieNoticeController'

@@ -2,7 +2,7 @@
 Adds cookie notice configuration to the site config
 
 ## Requirements
- * SilverStripe 2.4.x
+ * SilverStripe 3.1
 
 ## Installation
 Install as normal and add <% include CookieNotice %> to your Page.ss template right after the body tag.

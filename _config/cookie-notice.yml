@@ -1,0 +1,9 @@
+---
+Name: cookie-notice
+---
+SiteConfig:
+  extensions:
+    - 'CookieNoticeSiteConfig'
+Page_Controller:
+  extensions:
+    - 'CookieNoticePageDecorator'

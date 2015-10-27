@@ -9,7 +9,8 @@
 				url: 'cookienotice/accept',
 				success: function(data, textStatus) {
 					if(data === 'success') {
-						cookieNotice.slideUp(500);
+						// cookieNotice.slideUp(500);
+						cookieNotice.fadeOut();
 					}
 				}
 			});
